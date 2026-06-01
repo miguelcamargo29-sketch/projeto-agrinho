@@ -1,1 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>M. Lopez - Consultor de Imóveis</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
+  <!-- Cabeçalho -->
+  <header>
+    <div class="container">
+      <div class="header-inner">
+        <div class="logo">
+          <!-- Logo textual aproximado -->
+          M. Lopez
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#servicos">Nossos serviços</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <div class="container">
+
+      <!-- Boas-vindas / Hero -->
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-text">
+          <h1 id="hero-title" class="hero-title">Consultor de Imóveis</h1>
+          <p class="hero-subtitle">Impulsionando sua jornada imobiliária</p>
+          <a href="#servicos" class="btn-primary">SAIBA MAIS</a>
+        </div>
+        <div class="hero-image" aria-hidden="true">
+          <!-- Aqui entraria a imagem principal -->
+        </div>
+      </section>
+
+      <!-- Sobre -->
+      <section id="sobre" class="sobre">
+        <div>
+          <h2>Sobre M.Lopez</h2>
+          <p>
+            Com um profundo conhecimento do mercado imobiliário, M. Lopez oferece
+            orientação estratégica para ajudar clientes a tomar decisões informadas
+            em suas jornadas de compra, venda ou investimento.
+          </p>
+          <p>
+            M. Lopez possui um histórico comprovado de resultados, combinando
+            análise de mercado, visão de longo prazo e atendimento personalizado
+            para cada cliente.
+          </p>
+        </div>
+        <div>
+          <div class="sobre-img" aria-hidden="true">
+            <!-- Aqui entraria a imagem da seção Sobre -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Depoimentos -->
+      <section class="depoimentos" aria-labelledby="depoimentos-title">
+        <div class="depoimentos-header">
+          <h2 id="depoimentos-title">Depoimentos</h2>
+          <p>
+            A expertise e o profissionalismo de M. Lopez foram fundamentais para
+            garantir decisões seguras e bem embasadas em cada etapa do processo.
+          </p>
+        </div>
+        <div class="depoimentos-grid">
+          <article class="depoimento-card">
+            <p>
+              “O conselho perspicaz de M. Lopez me levou a um investimento
+              imobiliário que superou minhas expectativas.”
+            </p>
+            <p class="depoimento-nome">Elena Martinez</p>
+          </article>
+          <article class="depoimento-card">
+            <p>
+              “Sou grato pela orientação de M. Lopez, que tornou o processo de
+              compra de imóvel muito mais simples e seguro.”
+            </p>
+            <p class="depoimento-nome">James Oliveira</p>
+          </article>
+          <article class="depoimento-card">
+            <p>
+              “A abordagem estratégica de M. Lopez me ajudou a vender meu imóvel
+              com rapidez e excelente retorno.”
+            </p>
+            <p class="depoimento-nome">Pamela Kaster</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Expertise / Por que nos escolher -->
+      <section id="servicos" class="expertise" aria-labelledby="expertise-title">
+        <div class="expertise-header">
+          <h2 id="expertise-title">Por que nos escolher</h2>
+          <p>
+            M. Lopez se destaca por seu conhecimento abrangente do mercado
+            imobiliário, oferecendo suporte completo em cada etapa da sua decisão.
+          </p>
+        </div>
+        <div class="expertise-grid">
+          <div class="expertise-item">
+            <div class="expertise-icon" aria-hidden="true"></div>
+            <h3>Especialização em mercado</h3>
+            <p>
+              Beneficie-se das avaliações e análises de mercado para identificar
+              as melhores oportunidades imobiliárias.
+            </p>
+          </div>
+          <div class="expertise-item">
+            <div class="expertise-icon" aria-hidden="true"></div>
+            <h3>Orientação personalizada</h3>
+            <p>
+              Receba estratégias de investimento personalizadas de acordo com seu
+              perfil e objetivos.
+            </p>
+          </div>
+          <div class="expertise-item">
+            <div class="expertise-icon" aria-hidden="true"></div>
+            <h3>Suporte profissional</h3>
+            <p>
+              Conte com M. Lopez para suporte profissional e dedicado em todas as
+              etapas da negociação.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contato -->
+      <section class="contato" aria-labelledby="contato-title">
+        <div>
+          <h2 id="contato-title">Contato</h2>
+          <p>
+            Tem alguma dúvida ou precisa de aconselhamento imobiliário?
+            Envie uma mensagem e retornaremos em breve.
+          </p>
+        </div>
+        <div>
+          <form id="contato-form">
+            <input type="text" name="nome" placeholder="Nome" required />
+            <input type="email" name="email" placeholder="E-mail" required />
+            <textarea name="mensagem" rows="4" placeholder="Mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <h3>Acompanhe as novidades</h3>
+          <p>Receba atualizações e insights sobre o mercado imobiliário.</p>
+        </div>
+        <form id="newsletter-form">
+          <input type="email" placeholder="Seu e-mail" required />
+          <button type="submit">Inscrever</button>
+        </form>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="logo">M. Lopez</div>
+        <div class="footer-links">
+          <a href="#politica-privacidade">Política de Privacidade</a>
+          <a href="#acessibilidade">Declaração de Acessibilidade</a>
+          <a href="#cookies">Política de Cookies</a>
+        </div>
+        <div>
+          &copy; 2035 por M. Lopez. Desenvolvido e protegido por Wix.com
+        </div>
+        <div>
+          Rua Prates, 194 - Bom Retiro São Paulo - SP<br />
+          (11) 3456-7890 · info@meusite.com
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
