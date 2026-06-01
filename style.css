@@ -1,1 +1,323 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+body {
+  font-family: Arial, sans-serif;
+  color: #111;
+  line-height: 1.5;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+header,
+section,
+footer {
+  padding: 40px 20px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Cabeçalho */
+header {
+  border-bottom: 1px solid #eee;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+/* Boas-vindas (hero) */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.hero-text {
+  flex: 1 1 280px;
+}
+
+.hero-title {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.hero-subtitle {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #111;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.hero-image {
+  flex: 1 1 280px;
+  min-height: 220px;
+  background: #ddd;
+}
+
+/* Sobre */
+.sobre {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+  gap: 40px;
+  align-items: start;
+}
+
+.sobre h2 {
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+
+.sobre p {
+  margin-bottom: 12px;
+  color: #444;
+}
+
+.sobre-img {
+  width: 100%;
+  min-height: 220px;
+  background: #ccc;
+}
+
+/* Depoimentos */
+.depoimentos {
+  background: #fafafa;
+}
+
+.depoimentos-header {
+  margin-bottom: 30px;
+}
+
+.depoimentos-header h2 {
+  font-size: 26px;
+  margin-bottom: 8px;
+}
+
+.depoimentos-header p {
+  color: #555;
+  max-width: 600px;
+}
+
+.depoimentos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.depoimento-card {
+  border: 1px solid #eee;
+  padding: 20px;
+  border-radius: 6px;
+  background: #fff;
+}
+
+.depoimento-card p {
+  margin-bottom: 10px;
+}
+
+.depoimento-nome {
+  font-weight: bold;
+}
+
+/* Expertise */
+.expertise-header {
+  margin-bottom: 30px;
+}
+
+.expertise-header h2 {
+  font-size: 26px;
+  margin-bottom: 8px;
+}
+
+.expertise-header p {
+  color: #555;
+  max-width: 600px;
+}
+
+.expertise-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.expertise-item {
+  border: 1px solid #eee;
+  padding: 20px;
+  border-radius: 6px;
+}
+
+.expertise-icon {
+  width: 40px;
+  height: 40px;
+  background: #ddd;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.expertise-item h3 {
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+.expertise-item p {
+  color: #555;
+}
+
+/* Contato */
+.contato {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+  gap: 40px;
+  align-items: start;
+}
+
+.contato h2 {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.contato p {
+  color: #555;
+  margin-bottom: 16px;
+}
+
+form {
+  display: grid;
+  gap: 10px;
+}
+
+input,
+textarea {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font: inherit;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  border-radius: 4px;
+  border: none;
+  background: #111;
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/* Rodapé */
+footer {
+  background: #111;
+  color: #fff;
+  margin-top: 40px;
+}
+
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+footer h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+footer form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+footer input[type="email"] {
+  flex: 1 1 200px;
+  padding: 8px;
+  border-radius: 4px;
+  border: none;
+}
+
+footer button[type="submit"] {
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: none;
+  background: #fff;
+  color: #111;
+  font-size: 13px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 30px;
+  font-size: 13px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 15px;
+  margin-top: 10px;
+}
+
+.footer-links a {
+  margin-right: 15px;
+  font-size: 13px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  header {
+    padding-bottom: 20px;
+  }
+
+  .header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .sobre,
+  .contato {
+    grid-template-columns: 1fr;
+  }
+}
